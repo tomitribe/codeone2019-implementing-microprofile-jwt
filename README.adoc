@@ -5,7 +5,7 @@ Deep-dives into implementing an OAuth 2.0 JWT architecture built on MicroProfile
 == JWT Overview
 
 Short view of a complete OAuth 2.0 JWT architecture, discussing what makes them both secure and scalable.
-( 10 minutes )
+(10 minutes, David)
 
 - JWT Image explanation
 - Verification explanation
@@ -17,7 +17,7 @@ Wednesday, September 18, 12:30 PM - 01:15 PM | Moscone South - Room 202
 == MicroProfile JWT Overview
 
 Journey into MicroProfile JWT begins, detailing a bare-minimum starter project that has a simple REST service and Arquillian tests challenging security.
- ( 10 minutes )
+ (10 minutes,Jean-Louis)
 
 * Goal of MicroProfile JWT
 ** Do JWT Verification for you
@@ -39,7 +39,7 @@ Journey into MicroProfile JWT begins, detailing a bare-minimum starter project t
 == Advanced Concepts
 
 Explore Advanced MicroProfile JWT concepts such as  putting business data in JWTs, encrypted claims, CDI @Injection, and using Bean Validation to replace @RolesAllowed usage.
-( 10 minutes )
+(10 minutes, David)
 
 - Eliminating RolesAllowed with Bean Validation
 - CDI Producers and qualifiers with @Claims
@@ -47,7 +47,7 @@ Explore Advanced MicroProfile JWT concepts such as  putting business data in JWT
 == Full App
 
 A Pet Store–like AngularJS app that performs client-side login and refresh.
-( 10 minutes )
+(10 minutes, Jean-Louis)
 
 TIP: Keeping Brazil’s Medical Industry Safe with MicroProfile [DEV4113]
 Wednesday, September 18, 05:00 PM - 05:45 PM | Moscone South - Room 310/311
