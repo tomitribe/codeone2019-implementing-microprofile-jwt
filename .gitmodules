@@ -1,3 +1,9 @@
 [submodule "starter-project"]
 	path = starter-project
-	url = git@github.com:tomitribe/tomee-microprofile-jwt-starter-project.git
+	url = https://github.com/tomitribe/tomee-microprofile-jwt-starter-project.git
+[submodule "fullstack-backbonejs"]
+	path = fullstack-backbonejs
+	url = https://github.com/tomitribe/microservice-with-jwt-and-microprofile.git
+[submodule "basics-jsonwebtoken"]
+	path = basics-jsonwebtoken
+	url = https://github.com/tomitribe/tomee-microprofile-jwt-jsonwebtoken.git
