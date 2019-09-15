@@ -1,0 +1,3 @@
+[submodule "tomee-microprofile-jwt-starter-project"]
+	path = tomee-microprofile-jwt-starter-project
+	url = git@github.com:tomitribe/tomee-microprofile-jwt-starter-project.git
