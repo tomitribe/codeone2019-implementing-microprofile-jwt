@@ -4,6 +4,4 @@
 [submodule "fullstack-backbonejs"]
 	path = fullstack-backbonejs
 	url = https://github.com/tomitribe/microservice-with-jwt-and-microprofile.git
-[submodule "basics-jsonwebtoken"]
-	path = basics-jsonwebtoken
-	url = https://github.com/tomitribe/tomee-microprofile-jwt-jsonwebtoken.git
+
