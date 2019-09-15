@@ -2,6 +2,12 @@
 
 Deep-dives into implementing an OAuth 2.0 JWT architecture built on MicroProfile.
 
+Clone as follows to get all submodules:
+
+----
+git clone --recurse-submodules https://github.com/tomitribe/codeone2019-implementing-microprofile-jwt.git
+----
+
 == JWT Overview
 
 Short view of a complete OAuth 2.0 JWT architecture, discussing what makes them both secure and scalable.
@@ -42,7 +48,7 @@ Explore Advanced MicroProfile JWT concepts such as  putting business data in JWT
 (10 minutes, David)
 
 - Eliminating RolesAllowed with Bean Validation
-- CDI Producers and qualifiers with @Claims
+- CDI Producers and qualifiers with `@Claims`
 
 == Full App
 
