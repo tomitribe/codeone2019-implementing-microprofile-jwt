@@ -42,6 +42,7 @@
     <module>basics-jsonwebtoken</module>
     <module>basics-claimvalue</module>
     <module>basics-claim</module>
+    <module>advanced-bean-validation</module>
   </modules>
 
   <properties>
