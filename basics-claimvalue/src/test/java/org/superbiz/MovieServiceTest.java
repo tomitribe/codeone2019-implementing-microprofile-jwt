@@ -40,14 +40,16 @@ public class MovieServiceTest {
     public static WebArchive createDeployment() {
         return ShrinkWrap.create(WebArchive.class, "test.war")
                 .addPackages(true, Api.class.getPackage())
-                .addAsResource("META-INF/microprofile-config.properties");
+                .addAsResource("META-INF/microprofile-config.properties")
+                .addAsResource("testkey.pub")
+                ;
     }
 
     @ArquillianResource
     private URL base;
 
     @Test
-    public void testAsManager() throws Exception {
+    public void testNotificationAddress() throws Exception {
         final WebClient webClient = createWebClient(base);
 
         final String claims = "{" +
@@ -68,6 +70,26 @@ public class MovieServiceTest {
 
     }
 
+    @Test
+    public void testAddMovieForbidden() throws Exception {
+        final WebClient webClient = createWebClient(base);
+
+        final Movie movie = new Movie(2, "Reservoir Dogs", "Quentin Tarantino");
+
+        final String claims = "{" +
+                "  \"sub\":\"Joe Cool\"," +
+                "  \"iss\":\"https://server.example.com\"," +
+                "  \"groups\":[\"user\"]," +
+                "  \"exp\":2552047942" +
+                "}";
+
+        final Response response = webClient.reset()
+                .path("/api/movies")
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + Tokens.asToken(claims))
+                .post(movie);
+        assertEquals(403, response.getStatus());
+    }
 
     @Test
     public void testAsUser() throws Exception {
