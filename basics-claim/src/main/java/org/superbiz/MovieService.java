@@ -29,8 +29,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 @Path("/movies")
 @Produces(MediaType.APPLICATION_JSON)
@@ -38,7 +36,8 @@ import java.util.concurrent.ConcurrentHashMap;
 @RequestScoped
 public class MovieService {
 
-    private Map<Integer, Movie> store = new ConcurrentHashMap<>();
+    @Inject
+    private MoviesStore moviesStore;
 
     @Inject
     @Claim("email")
@@ -54,13 +53,13 @@ public class MovieService {
     @GET
     @RolesAllowed({"manager", "user"})
     public List<Movie> getAllMovies() {
-        return new ArrayList<>(store.values());
+        return new ArrayList<>(moviesStore.getAllMovies());
     }
 
     @POST
     @RolesAllowed("manager")
     public void addMovie(Movie newMovie) {
-        store.put(newMovie.getId(), newMovie);
+        moviesStore.addMovie(newMovie);
     }
 
 }
