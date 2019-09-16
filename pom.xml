@@ -43,6 +43,7 @@
     <module>basics-claimvalue</module>
     <module>basics-claim</module>
     <module>advanced-bean-validation</module>
+    <module>advanced-bean-validation-japanese</module>
   </modules>
 
   <properties>
