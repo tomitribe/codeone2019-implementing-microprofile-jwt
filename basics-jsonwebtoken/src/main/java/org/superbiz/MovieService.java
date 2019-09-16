@@ -19,7 +19,7 @@ package org.superbiz;
 import org.eclipse.microprofile.jwt.JsonWebToken;
 
 import javax.annotation.security.RolesAllowed;
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -35,7 +35,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Path("/movies")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@RequestScoped
+@ApplicationScoped
 public class MovieService {
 
     private Map<Integer, Movie> store = new ConcurrentHashMap<>();
