@@ -45,6 +45,8 @@
     <module>advanced-bean-validation</module>
     <module>advanced-bean-validation-japanese</module>
     <module>advanced-bean-validation-composition</module>
+    <module>fullstack-backbonejs</module>
+    <module>fullstack-angularjs</module>
   </modules>
 
   <properties>
