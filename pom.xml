@@ -44,6 +44,8 @@
     <module>basics-claim</module>
     <module>advanced-bean-validation</module>
     <module>advanced-bean-validation-japanese</module>
+    <module>fullstack-backbonejs</module>
+    <module>fullstack-angularjs</module>
   </modules>
 
   <properties>

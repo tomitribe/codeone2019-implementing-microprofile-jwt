@@ -5,3 +5,6 @@
 	path = fullstack-backbonejs
 	url = https://github.com/tomitribe/microservice-with-jwt-and-microprofile.git
 
+[submodule "fullstack-angularjs"]
+	path = fullstack-angularjs
+	url = https://github.com/tomitribe/oauth2-jwt-angular
