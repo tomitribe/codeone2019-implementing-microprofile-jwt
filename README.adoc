@@ -40,7 +40,13 @@ Journey into MicroProfile JWT begins, detailing a bare-minimum starter project t
 ** `@Claim`
 ** `@RolesAllowed`
 ** `JsonWebToken`
-* Simple starter App
+
+Code:
+
+- link:starter-project[starter-project]
+- link:basics-claim[basics-claim]
+- link:basics-claimvalue[basics-claimvalue]
+- link:basics-jsonwebtoken[basics-jsonwebtoken]
 
 == Advanced Concepts
 
@@ -50,10 +56,22 @@ Explore Advanced MicroProfile JWT concepts such as  putting business data in JWT
 - Eliminating RolesAllowed with Bean Validation
 - CDI Producers and qualifiers with `@Claims`
 
+Code:
+
+- link:advanced-bean-validation[advanced-bean-validation]
+- link:advanced-bean-validation-japanese[advanced-bean-validation-japanese]
+- link:advanced-bean-validation-composition[advanced-bean-validation-composition]
+- link:advanced-claims-transformation[advanced-claims-transformation]
+
 == Full App
 
 A Pet Store–like AngularJS app that performs client-side login and refresh.
 (10 minutes, Jean-Louis)
+
+Code:
+
+- link:fullstack-angularjs[fullstack-angularjs]
+- link:fullstack-backbonejs[fullstack-backbonejs]
 
 TIP: Keeping Brazil’s Medical Industry Safe with MicroProfile [DEV4113]
 Wednesday, September 18, 05:00 PM - 05:45 PM | Moscone South - Room 310/311
