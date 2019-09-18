@@ -43,7 +43,7 @@ Journey into MicroProfile JWT begins, detailing a bare-minimum starter project t
 
 Code:
 
-- link:starter-project[starter-project]
+- https://github.com/tomitribe/tomee-microprofile-jwt-starter-project/[starter-project]
 - link:basics-claim[basics-claim]
 - link:basics-claimvalue[basics-claimvalue]
 - link:basics-jsonwebtoken[basics-jsonwebtoken]
@@ -70,8 +70,8 @@ A Pet Store–like AngularJS app that performs client-side login and refresh.
 
 Code:
 
-- link:fullstack-angularjs[fullstack-angularjs]
-- link:fullstack-backbonejs[fullstack-backbonejs]
+- https://github.com/tomitribe/oauth2-jwt-angular[fullstack-angularjs]
+- https://github.com/tomitribe/microservice-with-jwt-and-microprofile[fullstack-backbonejs]
 
 TIP: Keeping Brazil’s Medical Industry Safe with MicroProfile [DEV4113]
 Wednesday, September 18, 05:00 PM - 05:45 PM | Moscone South - Room 310/311
